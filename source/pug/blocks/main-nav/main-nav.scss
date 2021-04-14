@@ -1,6 +1,6 @@
 .main-nav {
   transition: .3s;
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     transform: translateX(-110vw);
     position: absolute;
     top: 100%;
