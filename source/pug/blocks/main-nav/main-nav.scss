@@ -28,6 +28,23 @@
       color: black;
       margin-bottom: 16px;
       display: block;
+      text-align: center;
+    }
+    &__item{
+      &--phone{
+        margin-bottom: 20px;
+        .main-nav__item-link{
+          font-size: 24px;
+          line-height: 29px;
+          color: $accent;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &__label{
+      font-size: 12px;
+      line-height: 14px;
+      color: #000000;
     }
   }
   @include media-breakpoint-up(lg) {
