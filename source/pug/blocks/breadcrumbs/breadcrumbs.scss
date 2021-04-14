@@ -23,6 +23,7 @@
     &:last-child{
       color: black;
       background: #E9E9E9;
+      font-weight: normal;
     }
   }
   @include media-breakpoint-up(lg){
