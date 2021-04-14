@@ -1,0 +1,41 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 16px;
+  }
+  &__item{
+    margin-right: 5px;
+    background-color: $accent;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1;
+    min-height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+    border-radius: 50px;
+    &:last-child{
+      color: black;
+      background: #E9E9E9;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    padding-top: 32px;
+    margin-bottom: 20px;
+    &__item{
+      font-size: 14px;
+      line-height: 17px;
+      min-height: 20px;
+      padding-left: 7px;
+      padding-right: 7px;
+      margin-right: 7px;
+    }
+  }
+
+}

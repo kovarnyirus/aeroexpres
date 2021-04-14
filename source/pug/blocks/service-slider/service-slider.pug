@@ -1,0 +1,37 @@
+mixin service-slider-item(data)
+	+e.item
+		+e.item-top
+			+e.img-wrapper
+				+e.IMG.img(src="img/" + data.img alt='img')
+			+e.content
+				+e.H3.title= data.title
+				+e.P.subtitle= data.subtitle
+				+e.P.description= data.description
+		+e.FORM.item-footer
+			+e.quantity
+				+e.quantity-title Количество
+				+e.quantity-wrapper
+					+e.quantity-control--minus
+					+e.INPUT.quantity-input(tupe='number' placeholder='1')
+					+e.quantity-control--plus
+			+e.cost-wrapper
+					+e.old-cost 256 ₽ за шт.
+					+e.new-cost 1 056 ₽
+			+e.BUTTON.buy Купить
+
+mixin service-slider()
+	+b.SECTION.service-slider
+		+e.wrapper
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						+service-slider-item({img: 'slider/2.png', title: 'Защита документов', subtitle: 'наклейка', description: 'Услуга «Защита документов» - это то, что необходимо каждому. Если Вы потеряете свой гражданский паспорт или водительское удостоверение, проблем не миновать. '	})
+					.swiper-slide
+						+service-slider-item({img: 'slider/1.png', title: 'Безопасное путешествие', subtitle: 'наклейка+бирка', description: 'Услуга «Безопасное путешествие» позволит Вам минимизировать риски от потери Вашего багажа в поездках.'	})
+					.swiper-slide
+						+service-slider-item({img: 'slider/3.png', title: 'Бирка на чемодан', subtitle: 'бирка', description: 'Услуга «Безопасное путешествие» позволит Вам минимизировать риски от потери Вашего багажа в поездках.'})
+				.swiper-button-next
+				.swiper-button-prev
+				.swiper-pagination
+
+

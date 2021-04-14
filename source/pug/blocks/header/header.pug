@@ -1,0 +1,15 @@
+include ../main-nav/main-nav
+
+mixin header()
+	+b.HEADER.header
+		.container
+			+e.wrapper
+				+e.BUTTON.menu-toggle
+					span
+				+e.logo-wrapper
+					+e.A.logo-link(href='#')
+						+e.IMG.logo(src='img/logo.svg' alt='logo' width='99')
+					+e.A.logo-link--cliked(href='#')
+						+e.IMG.logo--cliked(src='img/logo2.svg' alt='logo' width='93')
+				+main-nav()
+				+e.A.activate(href='#') Активировать

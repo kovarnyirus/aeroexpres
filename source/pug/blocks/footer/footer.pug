@@ -1,0 +1,33 @@
+mixin footer()
+	+b.FOOTER.footer
+		.container
+			+e.wrapper
+				+e.left-col
+					+e.logo-wrapper
+						+e.IMG.logo(src='img/footer-logo.svg' width='124')
+						+e.IMG.logo2(src='img/footer-logo2.svg' width='117')
+					+e.NAV.nav
+						+e.UL.nav-list
+							+e.LI.nav-item
+								+e.A.nav-link(href='#') Активация
+							+e.LI.nav-item
+								+e.A.nav-link(href='#') Продление
+							+e.LI.nav-item
+								+e.A.nav-link(href='#') Получение
+							+e.LI.nav-item
+								+e.A.nav-link(href='#') Оплата
+							+e.LI.nav-item
+								+e.A.nav-link(href='#') Вопросы и ответы
+					+e.bottom
+						+e.A.politics(href='#') Политика конфиденциальности
+						+e.A.privacy-policy(href='#') Политика конфиденциальности
+				+e.right-col
+					+e.contact-item
+						+e.A.phone-link(href='tel:+78004444308') 8 800 444 43 08
+						+e.P.description Консультация и поддержка клиентов
+					+e.contact-item
+						+e.A.phone-link(href='tel:+74996854308') 8 499 685 43 08
+						+e.P.description Help and customer support
+				+e.bottom--mobile-show
+					+e.A.politics(href='#') Политика конфиденциальности
+					+e.A.privacy-policy(href='#') Заявление о конфиденциальности

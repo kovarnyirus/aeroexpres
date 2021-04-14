@@ -1,0 +1,17 @@
+mixin step(data)
+	+e.LI.item
+		+e.img-wrapper
+			+icon(data.icon)
+		+e.H3.item-title= data.title
+		+e.P.item-subtitle= data.subtitle
+
+mixin steps()
+	+b.SECTION.steps
+		.container
+			+e.H2.title Как это работает
+			+e.OL.list
+				+step({icon: 'shopping-cart', title: 'Покупка', subtitle: 'Вы покупаете метки на сайте'})
+				+step({icon: 'trade', title: 'Получение', subtitle: 'Получение меток происходит в кассах Аэроэкспресс'})
+				+step({icon: 'tap', title: 'Активация', subtitle: 'Вы активируете пакет услуг и прикрепляете метки'})
+				+step({icon: 'inform', title: 'Информирование', subtitle: 'Когда Ваша вещь будет найдена, мы сообщим Вам об этом'})
+				+step({icon: 'suitcases', title: 'Возврат', subtitle: 'Clicktoid доставляет найденную вещь в любое удобное для Вас время и место '})

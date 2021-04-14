@@ -1,0 +1,18 @@
+extends layout/main
+include ../../pug/blocks/mixins/mixins
+include ../../pug/blocks/header/header
+include ../../pug/blocks/service-slider/service-slider
+include ../../pug/blocks/steps/steps
+include ../../pug/blocks/statistics/statistics
+include ../../pug/blocks/about/about
+
+
+block title
+	title Aeroexpress
+block pagecontent
+	+service-slider()
+	+steps()
+	+statistics()
+	+about()
+
+

@@ -1,0 +1,18 @@
+@import "cssreset";
+@import "bootstrap/bootstrap";
+@import "fonts";
+@import "vars";
+@import "media";
+@import "base";
+@import "swiper-vars";
+@import "swiper";
+@import "../pug/blocks/header/header";
+@import "../pug/blocks/main-nav/main-nav";
+@import "../pug/blocks/service-slider/service-slider";
+@import "../pug/blocks/steps/steps";
+@import "../pug/blocks/statistics/statistics";
+@import "../pug/blocks/about/about";
+@import "../pug/blocks/footer/footer";
+@import "../pug/blocks/breadcrumbs/breadcrumbs";
+
+

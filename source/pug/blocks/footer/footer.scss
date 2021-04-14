@@ -1,0 +1,147 @@
+.footer {
+  margin-bottom: 39px;
+
+  &__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+  }
+
+  &__nav {
+    margin-bottom: 20px;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__nav-item {
+    width: 50%;
+  }
+
+  &__nav-link {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 34px;
+  }
+
+  &__contact-item {
+    margin-bottom: 25px;
+  }
+
+  &__phone-link {
+    color: $accent;
+    margin-bottom: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  &__bottom {
+    display: none;
+
+    &--mobile-show {
+      display: block;
+    }
+  }
+
+  &__privacy-policy,
+  &__politics {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $accent;
+    text-align: center;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 10px;
+    padding-top: 300px;
+    background-image: url("../img/decor-footer.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    margin-top: -50px;
+    &__wrapper {
+      display: flex;
+    }
+    &__left-col {
+      flex-grow: 1;
+    }
+    &__logo-wrapper {
+      justify-content: flex-start;
+      margin-bottom: 48px;
+    }
+    &__logo {
+      margin-right: 40px;
+      width: 163px;
+    }
+    &__logo2 {
+      width: 155px;
+    }
+    &__nav {
+      display: block;
+      margin-bottom: 0;
+    }
+    &__bottom {
+      display: flex;
+
+      &--mobile-show {
+        display: none;
+      }
+    }
+
+    &__nav-item {
+      width: auto;
+    }
+
+    &__nav-link {
+      margin-right: 32px;
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 22px;
+
+    }
+
+    &__privacy-policy,
+    &__politics {
+      font-size: 12px;
+      line-height: 14px;
+      text-decoration: none;
+      margin-right: 47px;
+    }
+    &__contact-item {
+      text-align: right;
+      margin-bottom: 42px;
+    }
+    &__phone-link {
+      text-align: right;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 8px;
+    }
+    &__description {
+      text-align: right;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
