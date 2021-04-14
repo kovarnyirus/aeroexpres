@@ -122,12 +122,12 @@ blockquote {
 
 .decor-line-1{
   background-image: url("../img/decor.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 23vw;
+  min-height: 26vw;
   @include media-breakpoint-up(lg){
-    margin-top: -7vw;
-    margin-bottom: -10vw;
+    margin-top: -9vw;
+    margin-bottom: -12.5vw;
   }
 }
