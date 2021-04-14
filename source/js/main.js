@@ -15,8 +15,7 @@ var swiper = new Swiper('.swiper-container', {
 
 let mobileMenuToggle = document.querySelector('.header__menu-toggle')
 let mainNav = document.querySelector('.main-nav')
-
-
 mobileMenuToggle.addEventListener('click', function (evt){
   mainNav.classList.toggle('open')
+  mobileMenuToggle.classList.toggle('open')
 })
