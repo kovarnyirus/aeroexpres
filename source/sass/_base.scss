@@ -131,3 +131,14 @@ blockquote {
     margin-bottom: -12.5vw;
   }
 }
+.decor-line-2{
+  background-image: url("../img/decor-footer.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 26vw;
+  @include media-breakpoint-up(lg){
+    margin-top: -9vw;
+    margin-bottom: -12.5vw;
+  }
+}

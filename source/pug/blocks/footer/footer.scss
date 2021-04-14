@@ -1,5 +1,10 @@
 .footer {
   margin-bottom: 39px;
+  background-image: url("../img/decor-footer.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding-top: 20vw;
 
   &__logo-wrapper {
     display: flex;
@@ -74,12 +79,8 @@
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 10px;
-    padding-top: 300px;
-    background-image: url("../img/decor-footer.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    margin-top: -50px;
+    margin-top: -80px;
+    padding-top: 16.5vw;
     &__wrapper {
       display: flex;
     }
