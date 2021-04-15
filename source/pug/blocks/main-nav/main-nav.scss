@@ -1,10 +1,14 @@
 .main-nav {
   transition: .3s;
+
+
   @include media-breakpoint-down(md) {
     transform: translateX(-110vw);
     position: absolute;
     top: 100%;
     z-index: 20;
+    display: flex;
+    flex-direction: column;
     &.open {
       position: absolute;
       top: 100%;
@@ -14,8 +18,10 @@
       left: 0;
       transform: translateX(0);
       z-index: 20;
-      padding-top: 32px;
+      padding-top: 10px;
       padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
     &__list {
       display: flex;
@@ -30,11 +36,12 @@
       display: block;
       text-align: center;
     }
-    &__item{
-      &--phone{
+    &__item {
+      &--phone {
         margin-bottom: 20px;
         margin-top: 10px;
-        .main-nav__item-link{
+
+        .main-nav__item-link {
           font-size: 24px;
           line-height: 29px;
           color: $accent;
@@ -42,12 +49,31 @@
         }
       }
     }
-    &__label{
+    &__label {
       font-size: 12px;
       line-height: 14px;
       color: #000000;
     }
   }
+
+  &__activate {
+    width: 100%;
+    background-color: $accent;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    cursor: pointer;
+    margin-bottom: 32px;
+  }
+
   @include media-breakpoint-up(lg) {
     display: flex;
     align-items: center;
@@ -66,8 +92,19 @@
       line-height: 19px;
       text-decoration: none;
     }
-    &__label{
+    &__label {
       display: none;
+    }
+    &__activate {
+      width: auto;
+      padding: 12px 14px 14px 14px;
+      min-width: 169px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      order: 1;
+      margin-bottom: 0;
+      min-height: 48px;
     }
   }
 }
