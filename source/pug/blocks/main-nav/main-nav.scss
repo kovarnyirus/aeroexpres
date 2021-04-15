@@ -107,11 +107,6 @@
       order: 1;
       margin-bottom: 0;
       min-height: 48px;
-      @media not all and (min-resolution: .001dpcm) {
-        @supports (-webkit-appearance:none) {
-         padding: 14px;
-        }
-      }
     }
   }
 }
