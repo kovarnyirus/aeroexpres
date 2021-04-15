@@ -11,13 +11,13 @@
     color: white;
     padding-left: 8px;
     padding-right: 8px;
+    padding-bottom: 2px;
+    padding-top: 2px;
     font-weight: bold;
     font-size: 10px;
     line-height: 1;
     min-height: 16px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     margin-bottom: 7px;
     border-radius: 50px;
     &:last-child{
@@ -31,10 +31,12 @@
     padding-top: 16px;
     &__item{
       font-size: 14px;
-      line-height: 17px;
+      line-height: 1;
       min-height: 24px;
       padding-left: 7px;
       padding-right: 7px;
+      padding-bottom: 5px;
+      padding-top: 5px;
       margin-right: 7px;
     }
   }
