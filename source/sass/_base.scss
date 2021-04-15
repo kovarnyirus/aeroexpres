@@ -125,10 +125,10 @@ blockquote {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 26vw;
+  min-height: 25.4vw;
   @include media-breakpoint-up(lg){
-    margin-top: -9vw;
-    margin-bottom: -12.5vw;
+    margin-top: -8.4vw;
+    margin-bottom: -11.5vw;
   }
 }
 .decor-line-2{
@@ -141,4 +141,8 @@ blockquote {
     margin-top: -9vw;
     margin-bottom: -12.5vw;
   }
+}
+
+b{
+  font-weight: 500;
 }
