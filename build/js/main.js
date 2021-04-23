@@ -29,3 +29,17 @@ let allInputClear = document.querySelectorAll('.input__clear')
 allInputClear.forEach(function (item){
   item.addEventListener('click', clearInput)
 })
+
+$('.popup-with-move-anim').magnificPopup({
+  type: 'inline',
+  fixedContentPos: true,
+  fixedBgPos: true,
+  overflowY: 'auto',
+  closeBtnInside: true,
+  preloader: false,
+  midClick: true,
+  removalDelay: 300,
+  mainClass: 'my-mfp-zoom-in'
+});
+
+

@@ -1,7 +1,7 @@
 mixin main-nav()
 	// start main-nav
 	+b.NAV.main-nav
-		+e.A.activate(href='#') Активировать
+		+e.A.activate.popup-with-move-anim(href='#popup-active') Активировать
 		+e.UL.list
 			+e.LI.item
 				+e.A.item-link(href='#')  О компании

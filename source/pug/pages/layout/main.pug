@@ -1,6 +1,7 @@
 include ../../_assets/bemto/bemto
 include ../../blocks/header/header
 include ../../blocks/footer/footer
+include ../../blocks/popup/popup
 - set_bemto_settings({ modifier: "--" })
 
 doctype html
@@ -24,6 +25,8 @@ html(lang="ru")
 				h3 content
 			+footer()
 
+		script(src="js/jquery.min.js")
+		script(src="js/jquery.magnific-popup.min.js")
 		script(src="js/swiper-bundle.min.js")
 		script(src="js/main.js")
 

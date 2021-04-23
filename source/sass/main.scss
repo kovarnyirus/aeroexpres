@@ -6,6 +6,7 @@
 @import "base";
 @import "swiper-vars";
 @import "swiper";
+@import "magnific-popup";
 @import "../pug/blocks/mixins/mixins";
 @import "../pug/blocks/header/header";
 @import "../pug/blocks/main-nav/main-nav";
@@ -17,5 +18,6 @@
 @import "../pug/blocks/breadcrumbs/breadcrumbs";
 @import "../pug/blocks/services/services";
 @import "../pug/blocks/confirm/confirm";
+@import "../pug/blocks/popup/popup";
 
 

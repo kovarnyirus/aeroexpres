@@ -1,0 +1,13 @@
+extends layout/main
+include ../../pug/blocks/mixins/mixins
+include ../../pug/blocks/breadcrumbs/breadcrumbs
+include ../../pug/blocks/confirm/confirm
+
+
+
+block title
+	title Aeroexpress
+block pagecontent
+	+breadcrumbs('Подтверждение покупки', 'Главная')
+	.container
+		h2 попапы
