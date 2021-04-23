@@ -82,6 +82,22 @@
   display: flex;
   &__input{
     display: none;
+    &:checked{
+      & + .checkbox__checkbox{
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          width: 12px;
+          height: 10px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-size: cover;
+          background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5L4 8L11 1' stroke='%23000000' stroke-width='2'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
   }
   &__checkbox{
     position: relative;
@@ -92,7 +108,6 @@
     height: 18px;
     cursor: pointer;
     margin-right: 12px;
-
   }
   &__label{
     font-size: 20px;
@@ -100,6 +115,8 @@
     color: #000000;
   }
 }
+
+
 
 .agreement{
   .checkbox{
