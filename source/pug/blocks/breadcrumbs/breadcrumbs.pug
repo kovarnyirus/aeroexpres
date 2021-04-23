@@ -1,9 +1,8 @@
-mixin breadcrumbs()
-	// start breadcrumbs
+mixin breadcrumbs(act, ...items)
 	+b.breadcrumbs
 		.container
 			+e.list
-				+e.A.item(href='#') Главная
-				+e.item О компании
+				each item in items
+					+e.A.item(href='#') Главная
+				+e.SPAN.item= act
 
-	// end breadcrumbs

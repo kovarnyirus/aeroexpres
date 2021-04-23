@@ -1,0 +1,17 @@
+extends layout/main
+include ../../pug/blocks/mixins/mixins
+include ../../pug/blocks/breadcrumbs/breadcrumbs
+include ../../pug/blocks/services/services
+
+
+
+block title
+	title Aeroexpress
+block pagecontent
+	+breadcrumbs('Выбор пакета услуг для активации', 'Главная')
+	.container
+		h1 О Выбор пакета услуг для активации
+	.decor-line-1
+	.container.container--small
+		+services()
+
