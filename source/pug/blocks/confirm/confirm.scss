@@ -1,0 +1,18 @@
+.confirm {
+  .service-slider__img-wrapper {
+    min-width: 100%;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  @include media-breakpoint-up(md){
+    .service-slider__img-wrapper {
+      min-width: 395px;
+      flex-grow: 1;
+      max-width: 395px;
+    }
+    .service-slider__item-top{
+      padding-right: 0;
+    }
+  }
+
+}
