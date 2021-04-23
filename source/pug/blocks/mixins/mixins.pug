@@ -2,3 +2,27 @@ mixin icon(name,mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)
 		use(xlink:href="img/icons/sprite.svg#" + name)
+
+mixin input(type, label, placeholder, required, className)
+	+b.LABEL.input(class= className)
+		+e.P.label=  label
+			if (required)
+				span.required *
+		+e.wrapper
+			+e.INPUT.input(type= type, placeholder= placeholder, required= required  )
+			+e.clear
+
+mixin checkbox(label, checked, className)
+	+b.LABEL.checkbox
+		+e.INPUT.input(type='checkbox' checked= checked)
+		+e.SPAN.checkbox
+		+e.label= label
+mixin agreement(className)
+	.agreement(class= className)
+		+b.LABEL.checkbox
+			+e.INPUT.input(type='checkbox' checked= checked)
+			+e.SPAN.checkbox
+			p Я принимаю условия&nbsp
+				a(href='#') Соглашения
+				|   и даю согласие на обработкусвоих персональных данных
+

@@ -19,3 +19,13 @@ mobileMenuToggle.addEventListener('click', function (evt){
   mainNav.classList.toggle('open')
   mobileMenuToggle.classList.toggle('open')
 })
+
+function clearInput(element) {
+  element.target.closest('.input').querySelector('input').value = ""
+}
+
+let allInputClear = document.querySelectorAll('.input__clear')
+
+allInputClear.forEach(function (item){
+  item.addEventListener('click', clearInput)
+})
