@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 48px;
+    img{
+      border-radius: 0;
+    }
   }
 
   &__text {
