@@ -75,6 +75,36 @@
       transform: translate(-50%, -50%) rotate(45deg);
     }
   }
+  &__attention{
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    .icon{
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__error-msg{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: $accent;
+    padding-bottom: 20px;
+  }
+  &--error{
+    margin-bottom: 12px;
+    .input{
+      &__input{
+        border-color: $accent;
+        margin-bottom: 12px;
+      }
+      &__wrapper{
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .checkbox{

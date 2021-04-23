@@ -8,9 +8,19 @@ mixin input(type, label, placeholder, required, className)
 		+e.P.label=  label
 			if (required)
 				span.required *
-		+e.wrapper
+		+e.DIV.wrapper
 			+e.INPUT.input(type= type, placeholder= placeholder, required= required  )
-			+e.clear
+
+mixin input-error(type, label, placeholder, required, className)
+	+b.LABEL.input--error(class= className)
+		+e.P.label=  label
+			if (required)
+				span.required *
+		+e.DIV.wrapper
+			+e.INPUT.input(type= type, placeholder= placeholder, required= required  )
+			+e.attention
+				+icon('attantion')
+		+e.error-msg Поле обязательно для заполнения
 
 mixin checkbox(label, checked, className)
 	+b.LABEL.checkbox
