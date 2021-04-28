@@ -58,6 +58,8 @@
         width: calc(50% - 12px);
         margin-right: 24px;
         margin-bottom: 0;
+        line-height: 1;
+        min-height: 48px;
         &:last-child{
           margin-right: 0;
         }
