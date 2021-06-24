@@ -228,8 +228,17 @@
 
       &-active {
         transform: scale(1);
+
+        .service-slider__item{
+          box-shadow: 0px 8px 66px rgba(0, 0, 0, 0.25);
+        }
       }
     }
+
+    &__item{
+      box-shadow: none;
+    }
+
     &__title {
       font-size: 32px;
       line-height: 38px;
@@ -259,10 +268,10 @@
       width: 100%;
       height: auto;
     }
-    &__item-footer{
+    &__item-footer {
       padding: 24px;
     }
-    &__quantity{
+    &__quantity {
       width: auto;
       margin-right: auto;
       max-width: 369px;
@@ -275,38 +284,39 @@
       padding-left: 24px;
       justify-content: space-between;
     }
-    &__quantity-title{
+    &__quantity-title {
       font-size: 18.8931px;
       line-height: 20px;
       margin-bottom: 0;
     }
-    &__quantity-control{
+    &__quantity-control {
       width: 37px;
       height: 37px;
+
       &:after,
-      &:before{
+      &:before {
         width: 18px;
       }
     }
-    &__quantity-input{
+    &__quantity-input {
       width: 60px;
       font-size: 18.8931px;
       line-height: 20px;
     }
-    &__cost-wrapper{
+    &__cost-wrapper {
       width: auto;
       min-width: 130px;
     }
-    &__old-cost{
+    &__old-cost {
       font-size: 16.5314px;
       line-height: 18px;
       margin-bottom: 8px;
     }
-    &__new-cost{
+    &__new-cost {
       font-size: 23.6163px;
       line-height: 25px;
     }
-    &__buy{
+    &__buy {
       width: auto;
       margin-left: 28px;
       min-width: 199px;
@@ -316,12 +326,12 @@
       line-height: 23px;
       margin-top: 0;
     }
-    .swiper-pagination{
+    .swiper-pagination {
       margin-top: 56px;
       z-index: 10;
       position: relative;
     }
-    .swiper-container{
+    .swiper-container {
       padding-bottom: 95px;
       max-width: 1128px;
       overflow: visible;
@@ -339,8 +349,9 @@
       border-radius: 50%;
       top: 250px;
       cursor: pointer;
+
       &:after,
-      &:before{
+      &:before {
         position: absolute;
         display: block;
         content: '';
@@ -348,23 +359,26 @@
         height: 30px;
         background-color: $accent;
         top: 50%;
-        left: 50%;
+        left: 45%;
+
       }
-      &:before{
+
+      &:before {
         transform: translate(-50%, -85%) rotate(45deg);
       }
-      &:after{
+
+      &:after {
         transform: translate(-50%, -15%) rotate(-45deg);
       }
 
     }
 
     .swiper-button-next {
-      right: 0;
+      right: -30px;
       transform: rotate(180deg);
     }
-    .swiper-button-prev{
-      left: 0;
+    .swiper-button-prev {
+      left: -30px;
     }
   }
 }
