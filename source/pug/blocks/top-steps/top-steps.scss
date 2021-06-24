@@ -1,0 +1,74 @@
+.top-steps {
+  padding-top: 21px;
+  max-width: 968px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    &:last-child{
+      margin-bottom: 5px;
+    }
+  }
+  &__number{
+    background-image: url("../img/statisric-decor.svg");
+    background-size: cover;
+    width: 32px;
+    height: 33px;
+    min-width: 32px;
+    min-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 16px;
+    span{
+      margin-bottom: -3px;
+      margin-right: 1px;
+      color: white;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 1;
+    }
+  }
+  &__text{
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+  @include media-breakpoint-up(md){
+    padding-top: 41px;
+    margin-bottom: 30px;
+    &__list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__item{
+      margin-bottom: 0;
+    }
+    &__number{
+      width: 64px;
+      height: 67px;
+      min-width: 64px;
+      min-height: 67px;
+      span{
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: -11px;
+        margin-right: 6px
+      }
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 17px;
+      max-width: 140px;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    margin-bottom: 0;
+  }
+}
