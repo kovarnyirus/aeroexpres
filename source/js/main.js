@@ -42,4 +42,8 @@ $('.popup-with-move-anim').magnificPopup({
   mainClass: 'my-mfp-zoom-in'
 });
 
+$('.input.email .input__input').inputmask({
+  regex: "[A-Za-z0-9@._\u0410-]*"
+});
+
 

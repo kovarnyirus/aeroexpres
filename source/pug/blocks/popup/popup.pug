@@ -19,8 +19,19 @@ mixin popup-id()
 				a.btn.btn--fill(href='#') Далее
 				a.btn.btn(href='#') Отмена
 
+mixin popup-email()
+	+b.popup.zoom-anim-dialog.mfp-hide#popup-email
+		+e.wrapper
+			+e.H5.title  Введите Ваш e-mail:
+			p  Адрес электронной почты нужен для отправки чека при покупке.
+			+input('text', 'E-mail', 'Введите данные', true, 'email')
+			+e.buttons
+				a.btn.btn--fill(href='#') Далее
+				a.btn.btn(href='#') Отмена
+
 
 
 
 +popup-active()
 +popup-id()
++popup-email()

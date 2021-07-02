@@ -10,6 +10,7 @@ mixin input(type, label, placeholder, required, className)
 				span.required *
 		+e.DIV.wrapper
 			+e.INPUT.input(type= type, placeholder= placeholder, required= required  )
+			+e.clear
 
 mixin input-error(type, label, placeholder, required, className)
 	+b.LABEL.input--error(class= className)
@@ -27,6 +28,7 @@ mixin checkbox(label, checked, className)
 		+e.INPUT.input(type='checkbox' checked= checked)
 		+e.SPAN.checkbox
 		+e.label= label
+
 mixin agreement(className)
 	.agreement(class= className)
 		+b.LABEL.checkbox
