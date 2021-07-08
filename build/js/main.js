@@ -61,4 +61,10 @@ $('.input.email .input__input').inputmask({
   regex: "[A-Za-z0-9@._\u0410-]*"
 });
 
+$('.img-block .custom-scroll').mCustomScrollbar({
+  axis: 'x',
+  scrollbarPosition: "outside",
+  scrollInertia: "500"
+});
+
 
