@@ -64,7 +64,8 @@ $('.input.email .input__input').inputmask({
 $('.img-block .custom-scroll').mCustomScrollbar({
   axis: 'x',
   scrollbarPosition: "outside",
-  scrollInertia: "500"
+  scrollInertia: "500",
+  setLeft: '255'
 });
 
 

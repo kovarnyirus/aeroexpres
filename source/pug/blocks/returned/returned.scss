@@ -15,9 +15,12 @@
 
   &__item {
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     display: flex;
     align-items: flex-start;
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   &__img-wrapper {
@@ -41,14 +44,14 @@
     margin-bottom: 0;
     color: #E30613;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1;
   }
 
   &__number {
     color: #E30613;
     font-weight: 900;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1;
   }
 
   @include media-breakpoint-up(md) {
