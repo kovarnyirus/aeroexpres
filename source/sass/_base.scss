@@ -226,10 +226,14 @@ b {
   .swiper-wrapper {
     height: auto;
   }
+  .swiper-container{
+    padding-bottom: 20px;
+  }
 
   @include media-breakpoint-up(md) {
     .swiper-container{
       overflow: visible;
+      padding-bottom: 0;
     }
 
     .swiper-slide {
