@@ -205,11 +205,43 @@ b {
     color: white;
     background-color: $accent;
   }
-  &:hover{
+
+  &:hover {
     opacity: .8;
   }
 }
-.mfp-close-btn-in .mfp-close{
+
+.mfp-close-btn-in .mfp-close {
   color: black;
   opacity: 1;
 }
+
+
+.top-slider {
+  .swiper-slide {
+    width: 85vw;
+    height: auto;
+  }
+
+  .swiper-wrapper {
+    height: auto;
+  }
+
+  @include media-breakpoint-up(md) {
+    .swiper-container{
+      overflow: visible;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      height: auto;
+    }
+
+    .swiper-wrapper {
+      flex-direction: column;
+    }
+  }
+}
+
+
+

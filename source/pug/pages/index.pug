@@ -6,13 +6,24 @@ include ../../pug/blocks/steps/steps
 include ../../pug/blocks/statistics/statistics
 include ../../pug/blocks/about/about
 include ../../pug/blocks/top-steps/top-steps
+include ../../pug/blocks/returned/returned
+include ../../pug/blocks/recent-refunds/recent-refunds
+include ../../pug/blocks/img-block/img-block
 
 
 block title
 	title Aeroexpress
 block pagecontent
-	+top-steps()
+	.top-slider
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide
+					+top-steps()
+				.swiper-slide
+					+returned()
 	+service-slider()
+	+recent-refunds()
+	+img-block()
 	+steps()
 	+statistics()
 	+about()

@@ -1,0 +1,28 @@
+mixin recent-refunds-item(date, img, name, type, period)
+	+e.item
+		+e.img-wrapper
+			+e.IMG.img(src='img/icons/' + img alt='img')
+		+e.content
+			+e.top
+				+e.date= date
+				+e.name= name
+			+e.bottom
+				+e.type
+					span.label Потеряно:
+					span.value= type
+				+e.period
+					span.label Срок возврата:
+					span.value= period
+mixin recent-refunds()
+	// start recent-refunds
+	+b.SECTION.recent-refunds
+		+e.H2.title Последние возвраты : *
+		+e.list
+			+recent-refunds-item('04.07.2021', 'bag.svg', 'Александр М.', 'Багаж', '2 дня')
+			+recent-refunds-item('06.07.2021', 'key.svg', 'Иван Х.', 'Ключи', '8 часов')
+			+recent-refunds-item('06.07.2021', 'passport.svg', 'Виктор Д.', 'Документы', '2 часа')
+			+recent-refunds-item('05.07.2021', 'bag.svg', 'Елена Г.', 'Багаж', '1 день')
+		+e.P.public * - Пользователи дали согласие на публикацию своих данных
+
+
+	// end recent-refunds

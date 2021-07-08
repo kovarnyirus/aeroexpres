@@ -1,6 +1,6 @@
 'use strict'
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.service-slider .swiper-container', {
   slidesPerView: 'auto',
   centeredSlides: true,
   loop: true,
@@ -12,6 +12,21 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+var topSlider = new Swiper('.top-slider .swiper-container', {
+  slidesPerView: 'auto',
+  loop: true
+});
+
+window.addEventListener('resize', destroySlider)
+
+function destroySlider(evt){
+  if (window.innerWidth > 768){
+    topSlider.destroy(true, true)
+  }
+}
+
+destroySlider()
 
 let mobileMenuToggle = document.querySelector('.header__menu-toggle')
 let mainNav = document.querySelector('.main-nav')

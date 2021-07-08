@@ -1,0 +1,14 @@
+mixin returned-item(img, text, number)
+	+e.item
+		+e.img-wrapper
+			+e.IMG.img(src='img/' + img alt='img')
+		+e.content-wrapper
+			+e.P.text= text
+			+e.P.number= number
+
+mixin returned()
+	+b.returned
+		+e.list
+			+returned-item('icons/bag.svg', 'Возвращено багажа:', '54')
+			+returned-item('icons/passport.svg', 'Возвращено документов:', '192')
+			+returned-item('icons/key.svg', 'Возвращено ключей:', '598')
