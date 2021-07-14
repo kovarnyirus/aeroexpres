@@ -21,8 +21,13 @@ var topSlider = new Swiper('.top-slider .swiper-container', {
 window.addEventListener('resize', destroySlider)
 
 function destroySlider(evt){
-  if (window.innerWidth > 768){
-    topSlider.destroy(true, true)
+  if (window.innerWidth < 768 && topSlider.destroyed){
+    topSlider.init()
+    topSlider.destroyed = false
+  } else if (window.innerWidth < 768 && topSlider.destroyed == false) {
+    topSlider.update()
+  } else if (window.innerWidth > 768){
+    topSlider.destroy(false, true)
   }
 }
 
